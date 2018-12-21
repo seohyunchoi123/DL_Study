@@ -1,0 +1,47 @@
+1. 과제에 대한 설명
+
+PARAMS <- list(wife_edu_C1 = vector(mode = 'numeric', 4),
+               husband_edu_C1 = vector(mode = 'numeric', 4),
+               husband_job_C1 = vector(mode = 'numeric', 4),
+               living_index_C1 = vector(mode = 'numeric', 4),
+               wife_age_C1 = c(0, 8.2272),
+               children_C1 = c(0, 2.3585),
+               wife_edu_C2 = vector(mode = 'numeric', 4),
+               husband_edu_C2 = vector(mode = 'numeric', 4),
+               husband_job_C2 = vector(mode = 'numeric', 4),
+               living_index_C2 = vector(mode = 'numeric', 4),
+               wife_age_C2 = c(0, 8.2272),
+               children_C2 = c(0, 2.3585),
+               prior = vector(mode = 'numeric', 2),
+               prev_cnt = c(0, 0))
+
+부분에서 
+
+-뒤에 C1, C2 붙어 있는 부분은 각 변수에 대해 추정해야 할 모수입니다.
+-prior는 누적된 데이터의 C1, C2 비율이라고 생각하시면 됩니다.
+-prev_cnt는 제가 구현할 때 누적 데이터의 C1개수, C2개수인데요. 이것도 필요해요.
+
+work1.txt에서 C1 자료 10개의 자료, 3개가 범주1에 속한다고 하고, 
+work2.txt에서 C1 자료 10개의 자료, 6개가 범주1에 속한다고 할때,
+
+처음에 3/10=0.3으로 확률 추정, 다음 work2.txt가 들어올 때, 업데이트를 하려면
+
+(#(work1.txt 중 C1-범주1) + #(work2.txt 중 C1-범주1)) / (#(C1의 개수) + #(C2의 개수))
+
+= (3+6)/(10+10) 로 업데이트를 해야 하니까 
+
+
+2. 과제의 결과
+
+-계산과정에서 나누기, 곱셈을 하면서 오차가 발생할 수 있어요 ㅠㅠ 추정값이 매우 비슷하기만 하면 됩니다.
+-이 오차로 예측 결과 중 소수가 실제 naive_bayes 모델과 다른 데 괜찮습니다.
+
+
+3. 과제 폼 및 오류
+
+-저는 그렇게 해놨는데, 편하신 대로 하시면 되요. 굳이 제가 준대로 안하셔도 됩니다.
+-마지막 부분에 predict.1(test[,-1], PARAMS) ==> predict.1(test[,-1], PARAMS_3)
+
+
+이상입니다. 이해 안가시면 카톡 주세요!
+
