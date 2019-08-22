@@ -1,2 +1,2 @@
-# DL_Study
-Have studied and implemented ML, DL paper in a bigdata university club, ToBigs 
+# ML-DL-Paper-Implementation
+Have studied and implemented ML, DL paper
