@@ -7,13 +7,11 @@
 >**ALS**: D=20, iter=10, num_proc=4, alpha=128.0,reg_u=1.0, reg_i=1.0
 **BPR**: D= 50, iter = 100, num_proc=12, reg_b = 0.01, reg_u = 0.01, reg_i = 0.01, reg_j = 0.01, decay = 0.95 (D가 50이상부터 성능이 비슷하다는 율의 이전 실험결과를 참고하여 D=50으로 설정. 나머지는 모두 기존 세팅 그대로 유지)
 **NCF**: Embedding size = 16, iter = 10, optimizer = Adam, lr = 1e-05 (6번째 에폭부터 1e-06)
-**ONCF**: Embedding size = 64, iter = 10, optimizer = Adagrad, lr = 5e-02
 
 **학습 환경 - 카페 1d)**
 >**ALS**: D=40, iter=10, num_proc=8, alpha=8.0,reg_u=8.0, reg_i=8.0
 **BPR**: D= 50, iter = 100, num_proc=12, reg_b = 0.01, reg_u = 0.01, reg_i = 0.01, reg_j = 0.01, decay = 0.95 (D가 50이상부터 성능이 비슷하다는 율의 이전 실험결과를 참고하여 D=50으로 설정. 나머지는 모두 기존 세팅 그대로 유지)
 **NCF**: Embedding size = 16, iter = 10, optimizer = Adam, lr = 1e-05 (6번째 에폭부터 1e-06)
-**ONCF**: Embedding size = 64, iter = 10, optimizer = Adagrad, lr = 5e-02
 
 **실험 환경 )**
 >**실험 데이터**: 브런치 8d(전처리 후 총 유저수 1,940,636명), 카페 1d(전처리 후 총 유저수 809,416명)
@@ -23,7 +21,6 @@
 **1. 브런치 8d 실험 결과 (HR, NDCG 순)**
 
 ![image](https://github.daumkakao.com/storage/user/5352/files/67269a00-c851-11e9-9d84-d0622e28d2dc)
-
 
 
 ![image](https://github.daumkakao.com/storage/user/5352/files/6d1c7b00-c851-11e9-8888-3605e4f25936)
@@ -48,7 +45,6 @@
 #### 근거)
 1. 선형 내적과 뉴럴 네트워크가 앙상블로 합쳐진 구조인 Neural Collaborative Filtering 모델은 선형 내적뿐인 ALS보다 더 높은 성능을 보인다.
 2. Neural Collaborative Filtering 모델에서 레이어를 추가할수록 성능이 높아지는 경향을 볼 수 있다.
-3. 뉴럴네트워크 중에서도 ONCF의 CNN은 성능이 좋지 않았던 반면에 NCF의 MLP는 가장 높은 성능을 보이고 있다.
 
 
 ## 향후 과제들
@@ -56,4 +52,3 @@
 1. NCF와 ALS 간의 격차가 브런치 데이터에서는 컸는데 카페 데이터에서는 작아진 이유를 밝혀내기
 2. NCF에 더욱더 많은 레이어 쌓아서 실험해보기
 3. K-FOLD를 통해 실험 결과의 신뢰도 더욱 높이기
-4. ONCF의 Regularization Coefficient를 더욱 다양하게 실험해보기
