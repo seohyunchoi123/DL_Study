@@ -1,4 +1,4 @@
-### Neural Collaborative Filtering (NCF)
+# Neural Collaborative Filtering (NCF)
 * 임베딩한 유저 벡터와 아이템 벡터를 내적 + 뉴럴네트워크(MLP) 구조로 분석하는 모델을 제안하고 있다. 내적이라는 선형적 방법 외에도 뉴럴네트워크라는 비선형적 연산까지 앙상블로 이용하여 ALS를 능가할 수 있다고 주장하는 논문이다.
 
 ## 실험 테스트 결과
