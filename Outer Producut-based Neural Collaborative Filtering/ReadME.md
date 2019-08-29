@@ -1,4 +1,4 @@
- ### Outer Product-based Neural Collaborative Filtering (ONCF)
+ # Outer Product-based Neural Collaborative Filtering (ONCF)
 * 임베딩한 유저 벡터와 아이템 벡터를 CNN 구조로 분석하는 모델을 제안하고 있다. CNN을 통해 MLP보다 훨씬 적은 파라미터를 이용하여 더욱 좋은 성능을 낼 수 있다고 주장하고 있다.
 
 ## 실험 테스트 결과
