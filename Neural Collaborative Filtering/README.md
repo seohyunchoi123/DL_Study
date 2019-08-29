@@ -20,15 +20,15 @@
 
 **1. 브런치 8d 실험 결과 (HR, NDCG 순)**
 
+![브런치_ncf_hr](https://user-images.githubusercontent.com/36473249/63907710-6d866300-ca57-11e9-87ab-22bc5d34782d.png)
 
-
-
+![브런치_ncf_ndcg](https://user-images.githubusercontent.com/36473249/63907711-6d866300-ca57-11e9-9008-9a228f2da9d1.png)
 
 **2. 카페 1d 실험 결과 (HR, NDCG 순)**
 
+![카페_hr](https://user-images.githubusercontent.com/36473249/63907707-6cedcc80-ca57-11e9-84c9-538b2206b9ee.png)
 
-
-
+![카페_ndcg](https://user-images.githubusercontent.com/36473249/63907709-6d866300-ca57-11e9-83b2-726cc8871f7e.png)
 
 
 ## 도출된 결론
