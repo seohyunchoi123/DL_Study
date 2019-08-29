@@ -20,19 +20,12 @@
 
 **1. 브런치 8d 실험 결과 (HR, NDCG 순)**
 
-![image](https://github.daumkakao.com/storage/user/5352/files/67269a00-c851-11e9-9d84-d0622e28d2dc)
-
-
-![image](https://github.daumkakao.com/storage/user/5352/files/6d1c7b00-c851-11e9-8888-3605e4f25936)
 
 
 
 
 **2. 카페 1d 실험 결과 (HR, NDCG 순)**
 
-![image](https://github.daumkakao.com/storage/user/5352/files/2f1e6600-c8e8-11e9-8ec1-9032aa8ccc32)
-
-![image](https://github.daumkakao.com/storage/user/5352/files/33e31a00-c8e8-11e9-82d1-a19f9c5ad4ac)
 
 
 
